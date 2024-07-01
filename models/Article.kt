@@ -1,5 +1,6 @@
 package com.example.thenewsapp.models
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
@@ -20,7 +21,11 @@ data class Article(
     val source: Source,
     val title: String,
     val url: String,
-    val urlToImage: String
+    val urlToImage: String,
+
+     @ColumnInfo(name = "category")
+     val category: String? = null
+
 ): Serializable {
 
     override fun hashCode(): Int {
