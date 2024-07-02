@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/baseline_favorite_24"
         app:fabSize="normal"
+        app:backgroundTint="@color/purple"
         android:contentDescription="@string/app_name"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="32dp"
